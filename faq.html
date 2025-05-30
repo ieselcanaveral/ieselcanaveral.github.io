@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IES El Cañaveral | Preguntas frecuentes para futuros alumnos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0a2a4d;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    #search {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .keywords {
+      margin-bottom: 2rem;
+    }
+
+    .keywords button {
+      background-color: #0a2a4d;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      margin: 4px 6px 0 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .keywords button:hover {
+      background-color: #08325f;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-left: 4px solid #0a2a4d;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+      color: #0a2a4d;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .familia {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #0a2a4d;
+    }
+
+    .icono {
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Preguntas Frecuentes</h1>
+    <p>Futuros alumnos del IES El Cañaveral </p>
+  </header>
+
+  <main>
+    <input type="text" id="search" placeholder="🔍 Buscar pregunta...">
+
+    <div class="keywords">
+      <button data-keyword="admisión">Admisión</button>
+      <button data-keyword="matrícula">Matrícula</button>
+      <button data-keyword="ciberseguridad">Ciberseguridad</button>
+      <button data-keyword="fechas">Fechas</button>
+      <button data-keyword="requisitos">Requisitos</button>
+    </div>
+
+    <div class="familia">Preguntas generales</div>
+    <div class="faq-item">
+      <h3>¿Para quién es esta colección de preguntas frecuentes?</h3>
+      <p>Llamamos futuros alumnos a aquellas personas que deben hacer una solicitud de admisión, es decir, quienes intentan matricularse en el IES El Cañaveral por primera vez o quienes han completado su ciclo formativo en el centro y quieren continuar accediendo a una nueva formación con nosotros.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Qué horario tiene el centro?</h3>
+      <p>Tenemos dos turnos, uno diurno y otro vespertino (mañana y tarde). <a href="https://site.educa.madrid.org/ies.elcanaveral.mostoles/index.php/alumnado/horario-del-centro/">Consulta el horario exacto de cada turno</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Hay prácticas en empresas?</h3>
+      <p>Sí, todos los ciclos formativos prácticas formativas en empresa en primero y segundo, se denomina Fase de Formación en la Empresa (FFE). El curso de especialización en Ciberseguridad es el único que no tiene programa de prácticas.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Puede solicitar una beca?</h3>
+      <p>Sí, consulta las <a href="https://www.educacionfpydeportes.gob.es/eu/servicios-al-ciudadano/catalogo/estudiantes/becas-ayudas/para-estudiar/formacion-profesional.html">convocatorias de becas y ayudas del Ministerio de Educación</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Puedo convalidar módulos (asignaturas) si ya he cursado otro Ciclo Formativo?</h3>
+      <p>Sí, te indicamos <a href="https://site.educa.madrid.org/ies.elcanaveral.mostoles/index.php/secretaria/convalidaciones/">cómo convalidar módulos</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Qué diferencias hay entre la FP en régimen general y la FP en régimen intensivo?</h3>
+      <p><a href="https://www.comunidad.madrid/servicios/educacion/estudiar-fp-general-intensiva-virtual-proyectos-bilingues">Consulta las diferencias en este enlace</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Cuándo puedo solicitar la admisión al Ciclo Formativo que quiero cursar?</h3>
+      <p><a href="https://www.comunidad.madrid/servicios/educacion/admision-formacion-profesional">Consulta toda la información y el calendario de fechas de admisión</a>.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Cuándo y cómo me puedo matricular en el Ciclo Formativo que quiero estudiar?</h3>
+      <p>Una vez admitido en el Centro en el Ciclo Formativo solicitado, deberás matricularte en el periodo señalado en el  <a href="https://www.comunidad.madrid/servicios/educacion/admision-formacion-profesional">calendario de admisión publicado por la Consejería de Educación</a> según sea Grado Básico, Medio o Superior y la fase en que hayas sido admitido.</p>
+    </div>
+    <div class="faq-item">
+      <h3>¿Cuándo y cómo me puedo matricular en el Ciclo Formativo que quiero estudiar?</h3>
+      <p>Al ser un Centro Público, los Ciclos Formativos de Grado Medio son totalmente gratuitos. Sólo se abona el seguro escolar 1,12 Euros.
+      <br/>En el caso de los Ciclos Formativos de Grado Superior la matrícula tiene un coste de 400 Euros por curso, con la posibilidad de pagarlo en dos plazos, uno al formalizar la matrícula y el otro en el mes de diciembre. (Las familias numerosas tienen una bonificación del 50%)
+      <br/>En el caso de los Cursos de Especialización, la matrícula es gratuita. Sólo se abona el seguro escolar 1,12 Euros.</p>
+    </div>
+    
+    <div class="familia">📈 Administración y Gestión</div>
+    <div class="faq-item">
+      <h3>¿Qué ciclos formativos ofrece la familia de Administración y Gestión?</h3>
+      <p>Se imparten ciclos como Gestión Administrativa, Administración y Finanzas y Asistencia a la Dirección, consulta toda nuestra <a href="https://site.educa.madrid.org/ies.elcanaveral.mostoles/index.php/oferta-educativa-ies-el-canaveral/">Oferta Académica actualizada</a>.</p>
+    </div>
+
+    <div class="familia">🛍️ Comercio y Marketing</div>
+    <div class="faq-item">
+      <h3>¿Qué ciclos formativos ofrece la familia de Comercio y Marketing?</h3>
+      <p>Se imparten ciclos como Marketing y Publicidad, Transporte y Logística, Comercio Internacional, Gestión de Ventas y Espacios Comerciales, Actividades Comerciales, y Servicios Comerciales, consulta toda nuestra <a href="https://site.educa.madrid.org/ies.elcanaveral.mostoles/index.php/oferta-educativa-ies-el-canaveral/">Oferta Académica actualizada</a>.</p>
+    </div>
+
+    <div class="familia">💻 Informática y Comunicaciones</div>
+    <div class="faq-item">
+      <h3>¿Qué ciclos formativos ofrece la familia de Informática y Comunicaciones?</h3>
+      <p>Se imparten ciclos como Curso especialización en Ciberseguridad en Entornos de las Tecnologías de la Información, Desarrollo de Aplicaciones Web, Desarrollo de Aplicaciones Multiplataforma, Administración de Sistemas Informáticos en Red, Sistemas Microinformáticos y Redes (disponible en régimen general e intensivo), e Informática de Oficina, consulta toda nuestra <a href="https://site.educa.madrid.org/ies.elcanaveral.mostoles/index.php/oferta-educativa-ies-el-canaveral/">Oferta Académica actualizada</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 IES El Cañaveral - ¿Sigues con dudas, no encuentras una respuesta o has encontrado un enlace roto? <a href="https://site.educa.madrid.org/ies.elcanaveral.mostoles/index.php/inicio/contacto/">Contacta con nosotros</a>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("search");
+    const faqItems = document.querySelectorAll(".faq-item");
+    const keywordButtons = document.querySelectorAll(".keywords button");
+
+    function filterFAQs() {
+      const query = searchInput.value.toLowerCase();
+      faqItems.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.classList.toggle("hidden", !text.includes(query));
+      });
+    }
+
+    searchInput.addEventListener("input", filterFAQs);
+
+    keywordButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const keyword = button.getAttribute("data-keyword");
+        if (!searchInput.value.toLowerCase().includes(keyword)) {
+          searchInput.value += (searchInput.value ? ' ' : '') + keyword;
+          filterFAQs();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
