@@ -55,16 +55,16 @@
       background-color: #0a2a4d;
       color: white;
       border: none;
-      padding: 8px 14px;
-      margin: 4px 6px 0 0;
-      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+      border-radius: 5px;
       cursor: pointer;
       font-size: 0.9rem;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s;
     }
-
+    
     .keywords button:hover {
-      background-color: #08325f;
+      background-color: #15406f;
     }
 
     .faq-item {
@@ -115,12 +115,18 @@
   <main>
     <input type="text" id="search" placeholder="🔍 Buscar pregunta...">
 
+    <p style="margin: 0 0 0.5rem 0; font-weight: 600; color: #0a2a4d;">
+      💡 Usa estas palabras para filtrar más rápido:
+    </p>
+
     <div class="keywords">
       <button data-keyword="admisión">Admisión</button>
       <button data-keyword="matrícula">Matrícula</button>
-      <button data-keyword="ciberseguridad">Ciberseguridad</button>
       <button data-keyword="fechas">Fechas</button>
       <button data-keyword="requisitos">Requisitos</button>
+      <button data-keyword="requisitos">Documentación</button>
+      <button data-keyword="ciberseguridad">Ciberseguridad</button>
+      <button id="clear-search" style="margin-left: 1rem; background: #e0e0e0; color: #333;">❌ Limpiar</button>
     </div>
 
     <div class="familia">Preguntas generales</div>
@@ -200,15 +206,18 @@
     }
 
     searchInput.addEventListener("input", filterFAQs);
-
-    keywordButtons.forEach(button => {
+    
+    document.querySelectorAll(".keywords button[data-keyword]").forEach(button => {
       button.addEventListener("click", () => {
-        const keyword = button.getAttribute("data-keyword");
-        if (!searchInput.value.toLowerCase().includes(keyword)) {
-          searchInput.value += (searchInput.value ? ' ' : '') + keyword;
-          filterFAQs();
-        }
+        const keyword = button.dataset.keyword;
+        searchInput.value = keyword;
+        searchInput.dispatchEvent(new Event("input"));
       });
+    });
+    
+    document.getElementById("clear-search").addEventListener("click", () => {
+      searchInput.value = "";
+      searchInput.dispatchEvent(new Event("input"));
     });
   </script>
 
